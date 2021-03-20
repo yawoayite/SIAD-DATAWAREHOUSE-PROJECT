@@ -1,0 +1,301 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="344ca6e1-ed24-4c5e-805d-2265bcf4836c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>VUE-SOURCE-MODELE-ETOILE</ID>
+  <Name>VUE-SOURCE-MODELE-ETOILE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>MODELE-ETOILE</DataSourceID>
+  <Schema>
+    <xs:schema id="VUE-SOURCE-MODELE-ETOILE" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="VUE-SOURCE-MODELE-ETOILE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="c0260cdd-89de-4c61-bfaa-3ccba694f15f">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fait_consultation" msprop:design-time-name="2e45cea7-3f30-4719-979c-817169f951e6" msprop:DbTableName="fait_consultation" msprop:FriendlyName="fait_consultation" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_date" msprop:design-time-name="40a55124-8b1d-4eb1-80e5-88eb466337ab" msprop:DbColumnName="id_date" msprop:FriendlyName="id_date" type="xs:int" />
+                  <xs:element name="id_praticien" msprop:design-time-name="fdd16e5e-8a10-4c55-827d-8b9b9a5e19e4" msprop:DbColumnName="id_praticien" msprop:FriendlyName="id_praticien">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_patient" msprop:design-time-name="61999466-85d3-4cb8-b29b-1652115886ea" msprop:DbColumnName="id_patient" msprop:FriendlyName="id_patient">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_pathologie" msprop:design-time-name="b92b76e1-861e-475f-8e58-c861f16050ed" msprop:DbColumnName="id_pathologie" msprop:FriendlyName="id_pathologie" type="xs:int" />
+                  <xs:element name="id_centre" msprop:design-time-name="6cfbfe2d-015b-4ec4-9fe7-8c1f7eb8c5d7" msprop:DbColumnName="id_centre" msprop:FriendlyName="id_centre" type="xs:int" />
+                  <xs:element name="montant_consultation" msprop:design-time-name="11806c65-facb-45ef-945c-ec28b524ce16" msprop:DbColumnName="montant_consultation" msprop:FriendlyName="montant_consultation" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_patient" msprop:design-time-name="b8923247-8b69-489c-bd86-cf962cbaa97b" msprop:DbTableName="dim_patient" msprop:FriendlyName="dim_patient" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_patient" msprop:design-time-name="ef49d32c-84f1-49e5-a355-4f775d1ce178" msprop:DbColumnName="id_patient" msprop:FriendlyName="id_patient">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nom_patient" msprop:design-time-name="63b8bb01-9458-4937-8777-91489ed90ef9" msprop:DbColumnName="nom_patient" msprop:FriendlyName="nom_patient" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="prenom_patient" msprop:design-time-name="05bae411-65e5-4309-8909-355bd7a605ee" msprop:DbColumnName="prenom_patient" msprop:FriendlyName="prenom_patient" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="sexe_patient" msprop:design-time-name="727d8105-2241-4b0c-875d-70205c2042e1" msprop:DbColumnName="sexe_patient" msprop:FriendlyName="sexe_patient" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="age_patient" msprop:design-time-name="3d54bdad-88a8-48b1-9e3a-e5de78e2652d" msprop:DbColumnName="age_patient" msprop:FriendlyName="age_patient" type="xs:int" minOccurs="0" />
+                  <xs:element name="tranche_age" msprop:design-time-name="42483c38-bb46-4c0c-b86b-96e0fd021cc5" msprop:DbColumnName="tranche_age" msprop:FriendlyName="tranche_age" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="localite_patient" msprop:design-time-name="fab12463-8259-41d5-8eec-da10c6ae2d20" msprop:DbColumnName="localite_patient" msprop:FriendlyName="localite_patient" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_date" msprop:design-time-name="3958410d-c364-4622-8889-5c3ad97fb726" msprop:DbTableName="dim_date" msprop:FriendlyName="dim_date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_date" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f8af4145-38fd-4844-95b3-b3ae5e4c98a9" msprop:DbColumnName="id_date" msprop:FriendlyName="id_date" type="xs:int" />
+                  <xs:element name="jour" msprop:design-time-name="6a0a30ac-642a-4bc2-a07b-707eac49bc2f" msprop:DbColumnName="jour" msprop:FriendlyName="jour" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="semaine" msprop:design-time-name="84c005c3-11cd-497c-80a6-271c3348f263" msprop:DbColumnName="semaine" msprop:FriendlyName="semaine" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="mois" msprop:design-time-name="caa157c1-d0f2-42dc-a6ca-6477cc7f547b" msprop:DbColumnName="mois" msprop:FriendlyName="mois" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="trimestre" msprop:design-time-name="97a0c7c2-85ff-42e8-a965-037f1f72d08d" msprop:DbColumnName="trimestre" msprop:FriendlyName="trimestre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="annee" msprop:design-time-name="c350f47d-872f-4274-b074-ffe91ead0f60" msprop:DbColumnName="annee" msprop:FriendlyName="annee" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="date_consultation" msprop:design-time-name="45e9d938-21f1-4bd8-8ea2-76a0ec38d59f" msprop:DbColumnName="date_consultation" msprop:FriendlyName="date_consultation" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_pathologie" msprop:design-time-name="593228f7-7dbc-4103-b39c-eea03973d059" msprop:DbTableName="dim_pathologie" msprop:FriendlyName="dim_pathologie" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_pathologie" msprop:design-time-name="dd7d514f-d2b1-47ff-8ed0-7c01e9ffbeda" msprop:DbColumnName="id_pathologie" msprop:FriendlyName="id_pathologie" type="xs:int" />
+                  <xs:element name="libelle_pathologie" msprop:design-time-name="c9e5f6fc-3f09-4e38-9668-ea1d3f8f7d27" msprop:DbColumnName="libelle_pathologie" msprop:FriendlyName="libelle_pathologie" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="criticite_pathologie" msprop:design-time-name="92d4bb5f-e74a-4430-b7c4-16769b8cfa02" msprop:DbColumnName="criticite_pathologie" msprop:FriendlyName="criticite_pathologie" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_centre_medicale" msprop:design-time-name="89e576ba-13d6-4f87-95c1-0b198e8526be" msprop:DbTableName="dim_centre_medicale" msprop:FriendlyName="dim_centre_medicale" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_centre" msprop:design-time-name="157125dd-991a-43fc-9ca0-eb3777b5f9f6" msprop:DbColumnName="id_centre" msprop:FriendlyName="id_centre" type="xs:int" />
+                  <xs:element name="nom_centre" msprop:design-time-name="40a65c05-81bb-46fa-8d15-d4b373474780" msprop:DbColumnName="nom_centre" msprop:FriendlyName="nom_centre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="adresse_centre" msprop:design-time-name="ab58cab5-baae-44c3-a13b-28dda5dda0a0" msprop:DbColumnName="adresse_centre" msprop:FriendlyName="adresse_centre" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_praticien" msprop:design-time-name="d193ddeb-df89-4779-bca4-2c905918d17f" msprop:DbTableName="dim_praticien" msprop:FriendlyName="dim_praticien" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_praticien" msprop:design-time-name="2f8d4cc1-0301-43ca-836d-2a5ccb39a5ab" msprop:DbColumnName="id_praticien" msprop:FriendlyName="id_praticien">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nom_praticien" msprop:design-time-name="13604de4-f020-4519-9206-3aaa74c15b99" msprop:DbColumnName="nom_praticien" msprop:FriendlyName="nom_praticien" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="prenom_praticien" msprop:design-time-name="f84708cd-bb8e-46e5-a1a9-2b00a2533284" msprop:DbColumnName="prenom_praticien" msprop:FriendlyName="prenom_praticien" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="libelle_specialite" msprop:design-time-name="4462d340-7465-4bac-bc4b-a5a65885cbdc" msprop:DbColumnName="libelle_specialite" msprop:FriendlyName="libelle_specialite" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="libelle_grade" msprop:design-time-name="16ded771-6bba-4fc8-acef-0d8e3ec5a85f" msprop:DbColumnName="libelle_grade" msprop:FriendlyName="libelle_grade" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_fait_consultation" />
+          <xs:field xpath="id_date" />
+          <xs:field xpath="id_praticien" />
+          <xs:field xpath="id_patient" />
+          <xs:field xpath="id_pathologie" />
+          <xs:field xpath="id_centre" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_patient_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_patient" />
+          <xs:field xpath="id_patient" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_date" />
+          <xs:field xpath="id_date" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_pathologie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_pathologie" />
+          <xs:field xpath="id_pathologie" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_centre_medicale_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_centre_medicale" />
+          <xs:field xpath="id_centre" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_praticien_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_praticien" />
+          <xs:field xpath="id_praticien" />
+        </xs:unique>
+        <xs:keyref name="fk_consultation_date" refer="dbo_dim_date_Constraint1">
+          <xs:selector xpath=".//dbo_fait_consultation" />
+          <xs:field xpath="id_date" />
+        </xs:keyref>
+        <xs:keyref name="fk_consultation_pathologie" refer="dbo_dim_pathologie_Constraint1">
+          <xs:selector xpath=".//dbo_fait_consultation" />
+          <xs:field xpath="id_pathologie" />
+        </xs:keyref>
+        <xs:keyref name="fk_consultation_praticien" refer="dbo_dim_praticien_Constraint1">
+          <xs:selector xpath=".//dbo_fait_consultation" />
+          <xs:field xpath="id_praticien" />
+        </xs:keyref>
+        <xs:keyref name="fk_consultation_centre" refer="dbo_dim_centre_medicale_Constraint1">
+          <xs:selector xpath=".//dbo_fait_consultation" />
+          <xs:field xpath="id_centre" />
+        </xs:keyref>
+        <xs:keyref name="fk_consultation_patient" refer="dbo_dim_patient_Constraint1">
+          <xs:selector xpath=".//dbo_fait_consultation" />
+          <xs:field xpath="id_patient" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <VUE-SOURCE-MODELE-ETOILE xmlns="" />
+  </Schema>
+</DataSourceView>
